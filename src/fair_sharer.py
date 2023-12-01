@@ -21,10 +21,10 @@ def fair_sharer(values, num_iterations, share=0.1):
         left_neighbourMax_idx = max_value_idx -1
         
         
-        if max_value_idx == len(values) - 1: #When max-value has the last position in list
+        if max_value_idx == len(values) - 1: #if max-value has the last position in list
             right_neighbourMax_idx = 0
             
-        if max_value_idx == 0: #When max-value has the first position in list
+        if max_value_idx == 0: #if max-value has the first position in list
                 left_neighbourMax_idx = -1
                 
 
@@ -35,6 +35,3 @@ def fair_sharer(values, num_iterations, share=0.1):
 
     
     return values
-
-print(fair_sharer([0, 1000, 800, 0], 1))
-print(fair_sharer([0, 1000, 800, 0], 2))
